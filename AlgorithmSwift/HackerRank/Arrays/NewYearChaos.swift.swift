@@ -11,17 +11,19 @@ func minimumBribes(q: [Int]) -> Void {
     // Write your code here
     var result = 0
     
-    for element in q {
-        guard let qIdx = q.firstIndex(of: element) else { return }
-        let originIdx = element - 1
-        let moveCount = originIdx - qIdx
-        
-        guard moveCount < 3 else {
+    for (index, element) in q.enumerated() {
+        guard element <= index + 3 else {
             print("Too chaotic")
             return
         }
         
-        if qIdx < originIdx { result += moveCount }
+        if element - 2 < index {
+            for targetIndex in max(0, element - 2)..<index {
+                if element < q[targetIndex] {
+                result += 1
+                }
+            }
+        }
     }
     
     print(result)
