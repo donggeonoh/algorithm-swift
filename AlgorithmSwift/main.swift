@@ -7,4 +7,3 @@
 
 import Foundation
 
-Baekjoon1932().test()
