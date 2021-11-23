@@ -21,6 +21,7 @@
 		377622AB2594696200DFD278 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377622AA2594696200DFD278 /* Network.swift */; };
 		377622B025946DB200DFD278 /* 14888.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377622AF25946DB200DFD278 /* 14888.swift */; };
 		37C9D1D825926B9100942ABE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C9D1D725926B9100942ABE /* main.swift */; };
+		37CDE0F0274D259200F1C9B4 /* LuckBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CDE0EF274D259200F1C9B4 /* LuckBalance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +52,7 @@
 		377622AF25946DB200DFD278 /* 14888.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 14888.swift; sourceTree = "<group>"; };
 		37C9D1D425926B9100942ABE /* AlgorithmSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C9D1D725926B9100942ABE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		37CDE0EF274D259200F1C9B4 /* LuckBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckBalance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		3712804E274795B900BBACC4 /* HackerRank */ = {
 			isa = PBXGroup;
 			children = (
+				37CDE0EE274D257200F1C9B4 /* Greedys */,
 				37128058274A4D9400BBACC4 /* Arrays */,
 				37128057274A4D7500BBACC4 /* WarmupChallenges */,
 			);
@@ -165,6 +168,14 @@
 			path = AlgorithmSwift;
 			sourceTree = "<group>";
 		};
+		37CDE0EE274D257200F1C9B4 /* Greedys */ = {
+			isa = PBXGroup;
+			children = (
+				37CDE0EF274D259200F1C9B4 /* LuckBalance.swift */,
+			);
+			path = Greedys;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -223,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3712805C274A782800BBACC4 /* MinimumSwaps2.swift in Sources */,
+				37CDE0F0274D259200F1C9B4 /* LuckBalance.swift in Sources */,
 				37138D432596FE4A0037009E /* ExpressionN.swift in Sources */,
 				3712805A274A4DB800BBACC4 /* LeftRotation.swift in Sources */,
 				37128052274A4D0100BBACC4 /* SalesByMatch.swift in Sources */,
