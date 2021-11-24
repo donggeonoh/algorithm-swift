@@ -20,7 +20,7 @@ func minimumBribes(q: [Int]) -> Void {
         if element - 2 < index {
             for targetIndex in max(0, element - 2)..<index {
                 if element < q[targetIndex] {
-                result += 1
+                    result += 1
                 }
             }
         }

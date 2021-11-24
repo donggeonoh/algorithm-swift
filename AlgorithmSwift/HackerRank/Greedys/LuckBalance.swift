@@ -28,6 +28,6 @@ func luckBalance(k: Int, contests: [[Int]]) -> Int {
             count += 1
         }
     }
-
+    
     return answer + unimportantContest.compactMap { $0[0] }.reduce(0, +)
 }
