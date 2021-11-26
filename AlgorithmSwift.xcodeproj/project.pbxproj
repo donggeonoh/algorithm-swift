@@ -23,7 +23,9 @@
 		377622AB2594696200DFD278 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377622AA2594696200DFD278 /* Network.swift */; };
 		377622B025946DB200DFD278 /* 14888.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377622AF25946DB200DFD278 /* 14888.swift */; };
 		37A2F79D274F859E004406F3 /* Permutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A2F79C274F859E004406F3 /* Permutation.swift */; };
-		37A2F79F274FAAD9004406F3 /* Combination.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A2F79E274FAAD9004406F3 /* Combination.swift.swift */; };
+		37A2F79F274FAAD9004406F3 /* Combination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A2F79E274FAAD9004406F3 /* Combination.swift */; };
+		37A2F7A32750C497004406F3 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A2F7A22750C497004406F3 /* MergeSort.swift */; };
+		37A2F7A72750C4D0004406F3 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A2F7A62750C4D0004406F3 /* QuickSort.swift */; };
 		37C9D1D825926B9100942ABE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C9D1D725926B9100942ABE /* main.swift */; };
 		37CDE0F0274D259200F1C9B4 /* LuckBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CDE0EF274D259200F1C9B4 /* LuckBalance.swift */; };
 /* End PBXBuildFile section */
@@ -57,7 +59,9 @@
 		377622AA2594696200DFD278 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		377622AF25946DB200DFD278 /* 14888.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 14888.swift; sourceTree = "<group>"; };
 		37A2F79C274F859E004406F3 /* Permutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permutation.swift; sourceTree = "<group>"; };
-		37A2F79E274FAAD9004406F3 /* Combination.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combination.swift.swift; sourceTree = "<group>"; };
+		37A2F79E274FAAD9004406F3 /* Combination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combination.swift; sourceTree = "<group>"; };
+		37A2F7A22750C497004406F3 /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
+		37A2F7A62750C4D0004406F3 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 		37C9D1D425926B9100942ABE /* AlgorithmSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C9D1D725926B9100942ABE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		37CDE0EF274D259200F1C9B4 /* LuckBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckBalance.swift; sourceTree = "<group>"; };
@@ -153,9 +157,18 @@
 			isa = PBXGroup;
 			children = (
 				37A2F79C274F859E004406F3 /* Permutation.swift */,
-				37A2F79E274FAAD9004406F3 /* Combination.swift.swift */,
+				37A2F79E274FAAD9004406F3 /* Combination.swift */,
 			);
 			path = DataStructure;
+			sourceTree = "<group>";
+		};
+		37A2F7A12750C48A004406F3 /* Sortings */ = {
+			isa = PBXGroup;
+			children = (
+				37A2F7A22750C497004406F3 /* MergeSort.swift */,
+				37A2F7A62750C4D0004406F3 /* QuickSort.swift */,
+			);
+			path = Sortings;
 			sourceTree = "<group>";
 		};
 		37C9D1CB25926B9100942ABE = {
@@ -177,6 +190,7 @@
 		37C9D1D625926B9100942ABE /* AlgorithmSwift */ = {
 			isa = PBXGroup;
 			children = (
+				37A2F7A12750C48A004406F3 /* Sortings */,
 				37A2F79B274F858C004406F3 /* DataStructure */,
 				3712804E274795B900BBACC4 /* HackerRank */,
 				377622AD25946C9D00DFD278 /* Baekjoon */,
@@ -264,10 +278,12 @@
 				377622B025946DB200DFD278 /* 14888.swift in Sources */,
 				377622A725945C4300DFD278 /* TargetNumber.swift in Sources */,
 				37128054274A4D4400BBACC4 /* JumpingOnTheCloud.swift in Sources */,
-				37A2F79F274FAAD9004406F3 /* Combination.swift.swift in Sources */,
+				37A2F79F274FAAD9004406F3 /* Combination.swift in Sources */,
 				375B93AC274E56F3005388FB /* MaxMin.swift in Sources */,
 				374E16ED2593B04F009737D4 /* 18352.swift in Sources */,
+				37A2F7A32750C497004406F3 /* MergeSort.swift in Sources */,
 				377622AB2594696200DFD278 /* Network.swift in Sources */,
+				37A2F7A72750C4D0004406F3 /* QuickSort.swift in Sources */,
 				37128056274A4D5B00BBACC4 /* RepeatedString.swift in Sources */,
 				37128050274A4CDA00BBACC4 /* NewYearChaos.swift.swift in Sources */,
 				37138D472596FEB00037009E /* 1932.swift in Sources */,
