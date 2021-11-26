@@ -37,3 +37,30 @@ func permutation<T>(_ arr: [T], _ cur: [T], _ visited: [Bool], _ select: Int) ->
     
     return result
 }
+
+/// 중복 순열 알고리즘 작성
+///
+/// - Date: 2021/11/26
+/// - Author: Oh Donggeon
+/// 
+func permutation<T>(withRepetition arr: [T], _ select: Int) -> [[T]] {
+    permutation(withRepetition: arr, [], select)
+}
+
+private func permutation<T>(withRepetition arr: [T], _ cur: [T], _ select: Int) -> [[T]] {
+    var result: [[T]] = []
+    
+    guard cur.count != select else { return [cur] }
+    
+    for element in arr {
+        var nextCur = cur
+        
+        nextCur.append(element)
+        
+        result.append(contentsOf: permutation(withRepetition: arr, nextCur, select))
+        
+        let _ = nextCur.popLast()
+    }
+    
+    return result
+}
