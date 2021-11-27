@@ -56,3 +56,26 @@ class TargetNumber {
     }
     
 }
+
+func targetNumber(_ numbers: [Int], _ target: Int) -> Int {
+    targetNumber(numbers, [], target, 0)
+}
+
+private func targetNumber(_ numbers: [Int], _ current: [Int], _ target: Int, _ index: Int) -> Int {
+    guard index != numbers.count else {
+        if current.reduce(0, +) == target { return 1 }
+        else { return 0 }
+    }
+    var answer = 0
+    var current = current
+    
+    current.append(numbers[index])
+    answer += targetNumber(numbers, current, target, index + 1)
+    
+    let _ = current.popLast()
+    
+    current.append(-numbers[index])
+    answer += targetNumber(numbers, current, target, index + 1)
+    
+    return answer
+}
