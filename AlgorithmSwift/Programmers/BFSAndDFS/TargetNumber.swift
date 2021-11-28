@@ -61,6 +61,11 @@ func targetNumber(_ numbers: [Int], _ target: Int) -> Int {
     targetNumber(numbers, [], target, 0)
 }
 
+/// Programmers 타겟넘버 알고리즘 솔루션 DFS로 구현
+///
+/// - Date: 2021/11/27
+/// - Author: Oh Donggeon
+///
 private func targetNumber(_ numbers: [Int], _ current: [Int], _ target: Int, _ index: Int) -> Int {
     guard index != numbers.count else {
         if current.reduce(0, +) == target { return 1 }
@@ -78,4 +83,29 @@ private func targetNumber(_ numbers: [Int], _ current: [Int], _ target: Int, _ i
     answer += targetNumber(numbers, current, target, index + 1)
     
     return answer
+}
+
+/// Programmers 타겟넘버 알고리즘 솔루션
+///
+/// BFS로 구현하였으나 현재 queue를 배열을 queue 처럼 사용하여 효율성이 좋지 않음.
+/// LinkedList를 구현하면 해결
+///
+/// - Date: 2021/11/27
+/// - Author: Oh Donggeon
+///
+func targetNumberBFS(_ numbers: [Int], _ target: Int) -> Int {
+    guard let firstNumber = numbers.first else { return 0 }
+    
+    typealias Node = (number: Int, index: Int)
+    var queue: [Node] = [(firstNumber, 0), (-firstNumber, 0)]
+    
+    for index in 1..<numbers.count {
+        for _ in 0..<queue.count {
+            let node = queue.removeLast()
+            queue.insert((node.number + numbers[index], index), at: 0)
+            queue.insert((node.number - numbers[index], index), at: 0)
+        }
+    }
+    
+    return queue.filter { $0.number == target }.count
 }
