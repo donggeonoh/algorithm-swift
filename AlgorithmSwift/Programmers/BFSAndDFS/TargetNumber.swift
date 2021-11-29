@@ -87,8 +87,10 @@ private func targetNumber(_ numbers: [Int], _ current: [Int], _ target: Int, _ i
 
 /// Programmers 타겟넘버 알고리즘 솔루션
 ///
-/// BFS로 구현하였으나 현재 queue를 배열을 queue 처럼 사용하여 효율성이 좋지 않음.
-/// LinkedList를 구현하면 해결
+/// BFS로 구현하였으나 현재 배열을 queue 처럼 사용하여 효율성이 좋지 않음.
+/// LinkedList를 구현하거나 DoubleStackQueue를 구현하여 해결하면 된다.
+/// 알고리즘 문제를 푸는경우 DoubleStackQueue를 구현하여 문제를 풀자. (구현하기 쉽고 구현이 쉬워 테스트가 따로 필요없음)
+/// LinkedList는 구현 시 너무 오래 걸리고 예상치 못한 버그가 있을 수 있다. (테스트의 어려움이 있음)
 ///
 /// - Date: 2021/11/27
 /// - Author: Oh Donggeon
@@ -97,15 +99,18 @@ func targetNumberBFS(_ numbers: [Int], _ target: Int) -> Int {
     guard let firstNumber = numbers.first else { return 0 }
     
     typealias Node = (number: Int, index: Int)
-    var queue: [Node] = [(firstNumber, 0), (-firstNumber, 0)]
+    var queue = DoubleStackQueue<Node>()
+    
+    queue.enqueue((firstNumber, 0))
+    queue.enqueue((-firstNumber, 0))
     
     for index in 1..<numbers.count {
         for _ in 0..<queue.count {
-            let node = queue.removeLast()
-            queue.insert((node.number + numbers[index], index), at: 0)
-            queue.insert((node.number - numbers[index], index), at: 0)
+            let node = queue.dequeue()
+            queue.enqueue((node.number + numbers[index], index))
+            queue.enqueue((node.number - numbers[index], index))
         }
     }
     
-    return queue.filter { $0.number == target }.count
+    return queue.values.filter { $0.number == target }.count
 }
