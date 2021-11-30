@@ -1,5 +1,5 @@
 //
-//  DoubleStackQueue.swift.swift
+//  DoubleStackQueue.swift
 //  AlgorithmSwift
 //
 //  Created by Oh Donggeon on 2021/11/29.
@@ -7,10 +7,15 @@
 
 import Foundation
 
+/// DoubleStackQueue 구현
+///
+/// - Date: 2021/11/29
+/// - Author: Oh Donggeon
+///
 struct DoubleStackQueue<T> {
     
-    private(set) var new: [T] = []
-    private(set) var old: [T] = []
+    private var new: [T] = []
+    private var old: [T] = []
     
     var isEmpty: Bool {
         new.isEmpty && old.isEmpty

@@ -7,6 +7,10 @@
 
 import Foundation
 
+/// LinkedList 구현
+///
+/// LinkedList 가 제대로 구현 되었는지 검증이 필요함
+///
 class Node<T> {
     var value: T
     var next: Node?
