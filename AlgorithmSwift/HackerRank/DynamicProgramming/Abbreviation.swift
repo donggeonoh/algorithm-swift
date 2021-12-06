@@ -12,6 +12,10 @@ import Foundation
 /// LCS(Longest Common Subsequence) 알고리즘을 응용한 알고리즘 문제이다.
 /// LCS 알고리즘 이란? https://twinw.tistory.com/126 정리가 잘 되어있다.
 ///
+/// 이번 문제는 링크 2개를 보고 풀어보았다. 확실하게 LCS에 대해 이해하고 넘어가야겠다.
+/// https://sungjun221.github.io/algorithm/Abbreviation/#어떻게-풀까
+/// https://iawale.medium.com/abbreviation-hackerrank-medium-4601219c07d1
+///
 /// - Date: 2021/12/06
 /// - Author: Oh Donggeon
 /// - Link: https://www.hackerrank.com/challenges/abbr/
