@@ -30,6 +30,7 @@ import Foundation
 /// 해당 인덱스의 max 값을 구했다면 return 할 변수와 값을 비교하여 더 큰 경우 max 값을 갱신 시켜준다.
 /// https://iawale.medium.com/max-array-sum-hackerrank-medium-using-inplace-dynamic-programming-215a620d7705
 /// 위의 링크를 참조하여 재해석해서 구현하였다. (시간은 링크에 나와있는 경우의 수가 훨씬 더 빠르다)
+/// 
 /// - Date: 2021/12/02
 /// - Author: Oh Dongeeon
 /// - Link: https://www.hackerrank.com/challenges/max-array-sum
