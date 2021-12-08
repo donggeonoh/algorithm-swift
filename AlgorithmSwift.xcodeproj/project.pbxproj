@@ -12,6 +12,7 @@
 		3709510A275F73FE004B96E8 /* MinimumAbsoluteDifferenceInAnArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37095109275F73FE004B96E8 /* MinimumAbsoluteDifferenceInAnArray.swift */; };
 		3709510D2760939E004B96E8 /* MakingAnagrams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3709510C2760939E004B96E8 /* MakingAnagrams.swift */; };
 		3709510F2760A492004B96E8 /* AlternatingCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3709510E2760A492004B96E8 /* AlternatingCharacters.swift */; };
+		370951112760E515004B96E8 /* SpecialStringAgain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370951102760E515004B96E8 /* SpecialStringAgain.swift */; };
 		37128050274A4CDA00BBACC4 /* NewYearChaos.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3712804F274A4CDA00BBACC4 /* NewYearChaos.swift.swift */; };
 		37128052274A4D0100BBACC4 /* SalesByMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37128051274A4D0100BBACC4 /* SalesByMatch.swift */; };
 		37128054274A4D4400BBACC4 /* JumpingOnTheCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37128053274A4D4400BBACC4 /* JumpingOnTheCloud.swift */; };
@@ -60,6 +61,7 @@
 		37095109275F73FE004B96E8 /* MinimumAbsoluteDifferenceInAnArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumAbsoluteDifferenceInAnArray.swift; sourceTree = "<group>"; };
 		3709510C2760939E004B96E8 /* MakingAnagrams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakingAnagrams.swift; sourceTree = "<group>"; };
 		3709510E2760A492004B96E8 /* AlternatingCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlternatingCharacters.swift; sourceTree = "<group>"; };
+		370951102760E515004B96E8 /* SpecialStringAgain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialStringAgain.swift; sourceTree = "<group>"; };
 		3712804F274A4CDA00BBACC4 /* NewYearChaos.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewYearChaos.swift.swift; sourceTree = "<group>"; };
 		37128051274A4D0100BBACC4 /* SalesByMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesByMatch.swift; sourceTree = "<group>"; };
 		37128053274A4D4400BBACC4 /* JumpingOnTheCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpingOnTheCloud.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			children = (
 				3709510C2760939E004B96E8 /* MakingAnagrams.swift */,
 				3709510E2760A492004B96E8 /* AlternatingCharacters.swift */,
+				370951102760E515004B96E8 /* SpecialStringAgain.swift */,
 			);
 			path = StringManipulation;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				37138D472596FEB00037009E /* 1932.swift in Sources */,
 				371C80E72754AEE200983234 /* DoubleStackQueue.swift in Sources */,
 				37C9D1D825926B9100942ABE /* main.swift in Sources */,
+				370951112760E515004B96E8 /* SpecialStringAgain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
