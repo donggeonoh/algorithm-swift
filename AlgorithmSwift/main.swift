@@ -7,3 +7,7 @@
 
 import Foundation
 
+let str1 = "fcrxzwscanmligyxyvym"
+let str2 = "jxwtrhvujlmrpdoqbisbwhmgpmeoke"
+
+print(makeAnagram(a: str1, b: str2))
