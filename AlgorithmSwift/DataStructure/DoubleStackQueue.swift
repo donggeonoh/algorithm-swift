@@ -12,7 +12,7 @@ import Foundation
 /// - Date: 2021/11/29
 /// - Author: Oh Donggeon
 ///
-struct DoubleStackQueue<T> {
+struct DSQueue<T> {
     
     private var new: [T] = []
     private var old: [T] = []

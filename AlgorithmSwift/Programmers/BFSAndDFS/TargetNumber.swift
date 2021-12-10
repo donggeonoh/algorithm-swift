@@ -99,7 +99,7 @@ func targetNumberBFS(_ numbers: [Int], _ target: Int) -> Int {
     guard let firstNumber = numbers.first else { return 0 }
     
     typealias Node = (number: Int, index: Int)
-    var queue = DoubleStackQueue<Node>()
+    var queue = DSQueue<Node>()
     
     queue.enqueue((firstNumber, 0))
     queue.enqueue((-firstNumber, 0))

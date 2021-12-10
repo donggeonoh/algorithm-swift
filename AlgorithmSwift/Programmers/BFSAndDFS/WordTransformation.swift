@@ -15,7 +15,7 @@ import Foundation
 func wordTransformation(_ begin: String, _ target:String, _ words:[String]) -> Int {
     typealias CountWord = (word: String, visited: [Bool], count: Int)
     
-    var queue = DoubleStackQueue<CountWord>()
+    var queue = DSQueue<CountWord>()
     var answer = Int.max
     
     queue.enqueue(CountWord(begin, Array(repeating: false, count: words.count), 0))
