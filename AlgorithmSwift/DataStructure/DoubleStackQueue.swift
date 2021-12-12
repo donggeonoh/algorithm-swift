@@ -36,7 +36,7 @@ struct DSQueue<T> {
     mutating func dequeue() -> T {
         if old.isEmpty {
             old = new.reversed()
-            new.removeAll()
+            new = []
         }
         
         return old.removeLast()
