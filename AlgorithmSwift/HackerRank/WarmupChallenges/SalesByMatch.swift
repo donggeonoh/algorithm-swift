@@ -19,7 +19,7 @@ func sockMerchant(n: Int, ar: [Int]) -> Int {
         for compareSock in sortedSocks.reversed() {
             if sock == compareSock {
                 result += 1
-                sortedSocks.popLast()
+                let _ = sortedSocks.popLast()
                 break
             }
         }
