@@ -44,6 +44,7 @@
 		37CDE0F0274D259200F1C9B4 /* LuckBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CDE0EF274D259200F1C9B4 /* LuckBalance.swift */; };
 		37EA50342768C2FB000A9E6D /* TwoString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EA50332768C2FB000A9E6D /* TwoString.swift */; };
 		37EA50372769FBFA000A9E6D /* MarkAndToys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EA50362769FBFA000A9E6D /* MarkAndToys.swift */; };
+		37EA5039276A084C000A9E6D /* 2DArray-DS.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EA5038276A084C000A9E6D /* 2DArray-DS.swift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -97,6 +98,7 @@
 		37CDE0EF274D259200F1C9B4 /* LuckBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckBalance.swift; sourceTree = "<group>"; };
 		37EA50332768C2FB000A9E6D /* TwoString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoString.swift; sourceTree = "<group>"; };
 		37EA50362769FBFA000A9E6D /* MarkAndToys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkAndToys.swift; sourceTree = "<group>"; };
+		37EA5038276A084C000A9E6D /* 2DArray-DS.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2DArray-DS.swift.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				3712804F274A4CDA00BBACC4 /* NewYearChaos.swift.swift */,
 				37128059274A4DB800BBACC4 /* LeftRotation.swift */,
 				3712805B274A782800BBACC4 /* MinimumSwaps2.swift */,
+				37EA5038276A084C000A9E6D /* 2DArray-DS.swift.swift */,
 			);
 			path = Arrays;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				377622B025946DB200DFD278 /* 14888.swift in Sources */,
 				377622A725945C4300DFD278 /* TargetNumber.swift in Sources */,
 				3709510D2760939E004B96E8 /* MakingAnagrams.swift in Sources */,
+				37EA5039276A084C000A9E6D /* 2DArray-DS.swift.swift in Sources */,
 				37128054274A4D4400BBACC4 /* JumpingOnTheCloud.swift in Sources */,
 				37A2F79F274FAAD9004406F3 /* Combination.swift in Sources */,
 				3764884627578D3D00B6A627 /* OrdinaryKnapsack.swift in Sources */,
