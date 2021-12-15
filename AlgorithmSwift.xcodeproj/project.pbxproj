@@ -43,6 +43,7 @@
 		37C9D1D825926B9100942ABE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C9D1D725926B9100942ABE /* main.swift */; };
 		37CDE0F0274D259200F1C9B4 /* LuckBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CDE0EF274D259200F1C9B4 /* LuckBalance.swift */; };
 		37EA50342768C2FB000A9E6D /* TwoString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EA50332768C2FB000A9E6D /* TwoString.swift */; };
+		37EA50372769FBFA000A9E6D /* MarkAndToys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EA50362769FBFA000A9E6D /* MarkAndToys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -95,6 +96,7 @@
 		37C9D1D725926B9100942ABE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		37CDE0EF274D259200F1C9B4 /* LuckBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckBalance.swift; sourceTree = "<group>"; };
 		37EA50332768C2FB000A9E6D /* TwoString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoString.swift; sourceTree = "<group>"; };
+		37EA50362769FBFA000A9E6D /* MarkAndToys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkAndToys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		3712804E274795B900BBACC4 /* HackerRank */ = {
 			isa = PBXGroup;
 			children = (
+				37EA50352769FBED000A9E6D /* Sortings */,
 				37EA50322768C2EB000A9E6D /* DictionariesAndHashmaps */,
 				3709511527638DEC004B96E8 /* Graphs */,
 				3709510B27609384004B96E8 /* StringManipulation */,
@@ -295,6 +298,14 @@
 			path = DictionariesAndHashmaps;
 			sourceTree = "<group>";
 		};
+		37EA50352769FBED000A9E6D /* Sortings */ = {
+			isa = PBXGroup;
+			children = (
+				37EA50362769FBFA000A9E6D /* MarkAndToys.swift */,
+			);
+			path = Sortings;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -355,6 +366,7 @@
 				37BAA0E62756011C00F3BBF9 /* Fibonacci.swift in Sources */,
 				37A219EA2758D53D00072616 /* MaxArrayNum.swift in Sources */,
 				3712805C274A782800BBACC4 /* MinimumSwaps2.swift in Sources */,
+				37EA50372769FBFA000A9E6D /* MarkAndToys.swift in Sources */,
 				375B93AA274E4372005388FB /* GreedyFlorist.swift in Sources */,
 				37A2F79D274F859E004406F3 /* Permutation.swift in Sources */,
 				37095106275CC4A5004B96E8 /* Candies.swift in Sources */,
