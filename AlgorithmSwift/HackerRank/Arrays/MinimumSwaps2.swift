@@ -7,17 +7,24 @@
 
 import Foundation
 
+/// 해커랭크 minimum swaps 2 솔루현
+///
+/// - Date: 2021/12/15
+/// - Author: Oh Donggeon
+/// - Link: https://www.hackerrank.com/challenges/minimum-swaps-2
+///
 func minimumSwaps(arr: [Int]) -> Int {
-    var swapArr = arr
+    let sortedArr = arr.sorted()
+    var arr = arr
     var result = 0
     
-    for element in 1...arr.count {
-        guard let currentIndex = swapArr.firstIndex(of: element) else { continue }
-        
-        guard element != swapArr[element - 1] else { continue }
-        
-        swapArr.swapAt(currentIndex, element - 1)
-        result += 1
+    while arr != sortedArr {
+        for index in 0..<arr.count {
+            guard arr[index] != index + 1 else { continue }
+            arr.swapAt(index, arr[index] - 1)
+            
+            result += 1
+        }
     }
     
     return result
