@@ -31,6 +31,7 @@
 		375B93AA274E4372005388FB /* GreedyFlorist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375B93A9274E4372005388FB /* GreedyFlorist.swift */; };
 		375B93AC274E56F3005388FB /* MaxMin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375B93AB274E56F3005388FB /* MaxMin.swift */; };
 		3764884627578D3D00B6A627 /* OrdinaryKnapsack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764884527578D3D00B6A627 /* OrdinaryKnapsack.swift */; };
+		376B655027731F6F0058FC7D /* NumberStringAndWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376B654F27731F6F0058FC7D /* NumberStringAndWord.swift */; };
 		377622A725945C4300DFD278 /* TargetNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377622A625945C4300DFD278 /* TargetNumber.swift */; };
 		377622AB2594696200DFD278 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377622AA2594696200DFD278 /* Network.swift */; };
 		377622B025946DB200DFD278 /* 14888.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377622AF25946DB200DFD278 /* 14888.swift */; };
@@ -85,6 +86,7 @@
 		375B93A9274E4372005388FB /* GreedyFlorist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreedyFlorist.swift; sourceTree = "<group>"; };
 		375B93AB274E56F3005388FB /* MaxMin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxMin.swift; sourceTree = "<group>"; };
 		3764884527578D3D00B6A627 /* OrdinaryKnapsack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdinaryKnapsack.swift; sourceTree = "<group>"; };
+		376B654F27731F6F0058FC7D /* NumberStringAndWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberStringAndWord.swift; sourceTree = "<group>"; };
 		377622A625945C4300DFD278 /* TargetNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetNumber.swift; sourceTree = "<group>"; };
 		377622AA2594696200DFD278 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		377622AF25946DB200DFD278 /* 14888.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 14888.swift; sourceTree = "<group>"; };
@@ -197,6 +199,22 @@
 			path = Algorithm;
 			sourceTree = "<group>";
 		};
+		376B654D27731C580058FC7D /* Kakao */ = {
+			isa = PBXGroup;
+			children = (
+				376B654E27731C6C0058FC7D /* KakaoInternship2021 */,
+			);
+			path = Kakao;
+			sourceTree = "<group>";
+		};
+		376B654E27731C6C0058FC7D /* KakaoInternship2021 */ = {
+			isa = PBXGroup;
+			children = (
+				376B654F27731F6F0058FC7D /* NumberStringAndWord.swift */,
+			);
+			path = KakaoInternship2021;
+			sourceTree = "<group>";
+		};
 		377622A425945C2000DFD278 /* Programmers */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +309,7 @@
 		37C9D1D625926B9100942ABE /* AlgorithmSwift */ = {
 			isa = PBXGroup;
 			children = (
+				376B654D27731C580058FC7D /* Kakao */,
 				37A2F79B274F858C004406F3 /* DataStructure */,
 				376B654C27731BDC0058FC7D /* Algorithm */,
 				3712804E274795B900BBACC4 /* HackerRank */,
@@ -420,6 +439,7 @@
 				37128050274A4CDA00BBACC4 /* NewYearChaos.swift.swift in Sources */,
 				375143782752476900A41C70 /* CountingValleys.swift in Sources */,
 				37138D472596FEB00037009E /* 1932.swift in Sources */,
+				376B655027731F6F0058FC7D /* NumberStringAndWord.swift in Sources */,
 				371C80E72754AEE200983234 /* DoubleStackQueue.swift in Sources */,
 				37C9D1D825926B9100942ABE /* main.swift in Sources */,
 				3791BB0A27720432004670FD /* FlippingBits.swift in Sources */,
