@@ -188,6 +188,15 @@
 			path = DynamicProgramming;
 			sourceTree = "<group>";
 		};
+		376B654C27731BDC0058FC7D /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				37BAA0E72756100100F3BBF9 /* DynamicProgramming */,
+				37A2F7A12750C48A004406F3 /* Sortings */,
+			);
+			path = Algorithm;
+			sourceTree = "<group>";
+		};
 		377622A425945C2000DFD278 /* Programmers */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,9 +291,8 @@
 		37C9D1D625926B9100942ABE /* AlgorithmSwift */ = {
 			isa = PBXGroup;
 			children = (
-				37BAA0E72756100100F3BBF9 /* DynamicProgramming */,
-				37A2F7A12750C48A004406F3 /* Sortings */,
 				37A2F79B274F858C004406F3 /* DataStructure */,
+				376B654C27731BDC0058FC7D /* Algorithm */,
 				3712804E274795B900BBACC4 /* HackerRank */,
 				377622AD25946C9D00DFD278 /* Baekjoon */,
 				377622A425945C2000DFD278 /* Programmers */,
