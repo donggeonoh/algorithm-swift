@@ -32,6 +32,7 @@
 		375B93AC274E56F3005388FB /* MaxMin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375B93AB274E56F3005388FB /* MaxMin.swift */; };
 		3764884627578D3D00B6A627 /* OrdinaryKnapsack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764884527578D3D00B6A627 /* OrdinaryKnapsack.swift */; };
 		376B655027731F6F0058FC7D /* NumberStringAndWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376B654F27731F6F0058FC7D /* NumberStringAndWord.swift */; };
+		376B655227736DBD0058FC7D /* CheckSocialDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376B655127736DBD0058FC7D /* CheckSocialDistance.swift */; };
 		377622A725945C4300DFD278 /* TargetNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377622A625945C4300DFD278 /* TargetNumber.swift */; };
 		377622AB2594696200DFD278 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377622AA2594696200DFD278 /* Network.swift */; };
 		377622B025946DB200DFD278 /* 14888.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377622AF25946DB200DFD278 /* 14888.swift */; };
@@ -87,6 +88,7 @@
 		375B93AB274E56F3005388FB /* MaxMin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxMin.swift; sourceTree = "<group>"; };
 		3764884527578D3D00B6A627 /* OrdinaryKnapsack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdinaryKnapsack.swift; sourceTree = "<group>"; };
 		376B654F27731F6F0058FC7D /* NumberStringAndWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberStringAndWord.swift; sourceTree = "<group>"; };
+		376B655127736DBD0058FC7D /* CheckSocialDistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckSocialDistance.swift; sourceTree = "<group>"; };
 		377622A625945C4300DFD278 /* TargetNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetNumber.swift; sourceTree = "<group>"; };
 		377622AA2594696200DFD278 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		377622AF25946DB200DFD278 /* 14888.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 14888.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				376B654F27731F6F0058FC7D /* NumberStringAndWord.swift */,
+				376B655127736DBD0058FC7D /* CheckSocialDistance.swift */,
 			);
 			path = KakaoInternship2021;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				37A2F7A72750C4D0004406F3 /* QuickSort.swift in Sources */,
 				37128056274A4D5B00BBACC4 /* RepeatedString.swift in Sources */,
 				37128050274A4CDA00BBACC4 /* NewYearChaos.swift.swift in Sources */,
+				376B655227736DBD0058FC7D /* CheckSocialDistance.swift in Sources */,
 				375143782752476900A41C70 /* CountingValleys.swift in Sources */,
 				37138D472596FEB00037009E /* 1932.swift in Sources */,
 				376B655027731F6F0058FC7D /* NumberStringAndWord.swift in Sources */,
