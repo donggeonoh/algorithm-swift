@@ -13,20 +13,29 @@ import Foundation
 /// - Author: Oh Donggeon
 /// - Link: https://programmers.co.kr/learn/courses/30/lessons/42862
 ///
-func gymSuit(_ n:Int, _ losts:[Int], _ reserves:[Int]) -> Int {
+func gymSuit(_ students: Int, _ losts:[Int], _ reserves:[Int]) -> Int {
     var reserveDict = initDict(elements: reserves, defaultValue: false)
-    var answer = n
+    var answer = students
     
-    for lost in losts {
+    for lostStudent in losts {
+        reserveDict[lostStudent]? = true
+    }
+    
+    for lost in losts.sorted() {
+        if reserveDict[lost] != nil {
+            continue
+        }
+        
         if let reserveStudent = reserveDict[lost - 1] {
             if !reserveStudent {
-                reserveDict[lost - 1] = true
+                reserveDict[lost - 1]? = true
                 continue
             }
         }
+        
         if let reserveStudent = reserveDict[lost + 1] {
             if !reserveStudent {
-                reserveDict[lost + 1] = true
+                reserveDict[lost + 1]? = true
                 continue
             }
         }
@@ -37,11 +46,11 @@ func gymSuit(_ n:Int, _ losts:[Int], _ reserves:[Int]) -> Int {
     return answer
 }
 
-func initDict(elements: [Int], defaultValue: Bool) -> Dictionary<Int, Bool> {
+private func initDict(elements: [Int], defaultValue: Bool) -> Dictionary<Int, Bool> {
     var dict: [Int: Bool] = [:]
     
     for element in elements {
-        dict[element] = false
+        dict[element] = defaultValue
     }
     
     return dict
