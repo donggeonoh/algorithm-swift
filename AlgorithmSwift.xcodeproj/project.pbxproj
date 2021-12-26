@@ -30,6 +30,7 @@
 		375826E52753BA7000F21CC8 /* WordTransformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375826E42753BA7000F21CC8 /* WordTransformation.swift */; };
 		375B93AA274E4372005388FB /* GreedyFlorist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375B93A9274E4372005388FB /* GreedyFlorist.swift */; };
 		375B93AC274E56F3005388FB /* MaxMin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375B93AB274E56F3005388FB /* MaxMin.swift */; };
+		37602533277883B500C1839E /* EditTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37602532277883B500C1839E /* EditTable.swift */; };
 		3764884627578D3D00B6A627 /* OrdinaryKnapsack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764884527578D3D00B6A627 /* OrdinaryKnapsack.swift */; };
 		376B655027731F6F0058FC7D /* NumberStringAndWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376B654F27731F6F0058FC7D /* NumberStringAndWord.swift */; };
 		376B655227736DBD0058FC7D /* CheckSocialDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376B655127736DBD0058FC7D /* CheckSocialDistance.swift */; };
@@ -87,6 +88,7 @@
 		375826E42753BA7000F21CC8 /* WordTransformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTransformation.swift; sourceTree = "<group>"; };
 		375B93A9274E4372005388FB /* GreedyFlorist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreedyFlorist.swift; sourceTree = "<group>"; };
 		375B93AB274E56F3005388FB /* MaxMin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxMin.swift; sourceTree = "<group>"; };
+		37602532277883B500C1839E /* EditTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTable.swift; sourceTree = "<group>"; };
 		3764884527578D3D00B6A627 /* OrdinaryKnapsack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdinaryKnapsack.swift; sourceTree = "<group>"; };
 		376B654F27731F6F0058FC7D /* NumberStringAndWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberStringAndWord.swift; sourceTree = "<group>"; };
 		376B655127736DBD0058FC7D /* CheckSocialDistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckSocialDistance.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 			children = (
 				376B654F27731F6F0058FC7D /* NumberStringAndWord.swift */,
 				376B655127736DBD0058FC7D /* CheckSocialDistance.swift */,
+				37602532277883B500C1839E /* EditTable.swift */,
 			);
 			path = KakaoInternship2021;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				3709510A275F73FE004B96E8 /* MinimumAbsoluteDifferenceInAnArray.swift in Sources */,
 				37138D432596FE4A0037009E /* ExpressionN.swift in Sources */,
 				3751437A275293BD00A41C70 /* LinkedList.swift in Sources */,
+				37602533277883B500C1839E /* EditTable.swift in Sources */,
 				375826E52753BA7000F21CC8 /* WordTransformation.swift in Sources */,
 				37EA50342768C2FB000A9E6D /* TwoString.swift in Sources */,
 				3712805A274A4DB800BBACC4 /* LeftRotation.swift in Sources */,
