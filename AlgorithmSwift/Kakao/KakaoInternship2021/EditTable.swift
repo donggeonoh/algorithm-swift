@@ -31,8 +31,21 @@ class DoublyNode<T: Comparable> {
 
 class DoublyLinkedList<T: Comparable> {
     
-    private(set) var head: DoublyNode<T>? = nil
-    private(set) var tail: DoublyNode<T>? = nil
+    private(set) var head: DoublyNode<T>?
+    private(set) var tail: DoublyNode<T>?
+    
+    var values: [T] {
+        var values: [T] = []
+        var node = head
+        
+        while node != nil {
+            if let node = node {
+                values.append(node.value)
+            }
+            node = node?.next
+        }
+        return values
+    }
     
     func append(_ data: T) {
         let node = DoublyNode(data)
@@ -50,134 +63,35 @@ class DoublyLinkedList<T: Comparable> {
     }
     
     func remove(_ node: DoublyNode<T>?) {
-        if head === tail {
-            head = nil
-            tail = nil
-            
-        } else if node === head {
-            head?.next?.prev = nil
+        if node === head {
             head = head?.next
-            
-        } else if node === tail {
-            tail?.prev?.next = nil
-            tail = tail?.prev
-            
-        } else {
-            node?.prev?.next = node?.next
-            node?.next?.prev = node?.prev
         }
+        if node === tail {
+            tail = tail?.prev
+        }
+        node?.prev?.next = node?.next
+        node?.next?.prev = node?.prev
     }
     
     func restore(_ node: DoublyNode<T>?) {
-            node?.prev?.next = node
-            node?.next?.prev = node
+        node?.prev?.next = node
+        node?.next?.prev = node
     }
     
-    func peek(_ value: T) -> DoublyNode<T>? {
-        var target = head
-        
-        while target != nil {
-            if value == target?.value {
-                return target
-            }
-            target = target?.next
-        }
-        
-        return target
-    }
-    
-    var values: [T] {
-        var values: [T] = []
+    func peek(_ index: Int) -> DoublyNode<T>? {
         var node = head
         
-        while node != nil {
-            if let node = node {
-                values.append(node.value)
-            }
+        for _ in 0..<index {
             node = node?.next
         }
-        
-        return values
-    }
-    
-    func insert(_ data: T) {
-        let node = DoublyNode(data)
-        
-        guard let head = head, let tail = tail else {
-            self.head = node
-            self.tail = node
-            return
-        }
-        
-        if data < head.value {
-            head.prev = node
-            node.next = head
-            
-            self.head = node
-            
-        } else if data > tail.value {
-            tail.next = node
-            node.prev = tail
-            
-            self.tail = node
-            
-        } else {
-            var next = self.head
-            
-            while next != nil {
-                guard let target = next else { return }
-                
-                if data < target.value {
-                    node.prev = target.prev
-                    node.next = target
-                    
-                    target.prev?.next = node
-                    target.prev = node
-                    
-                    break
-                }
-                
-                next = target.next
-            }
-        }
-    }
-    
-    func remove(_ data: T) -> DoublyNode<T>? {
-        var target = head
-        
-        if head === tail && data == head?.value {
-            head = nil
-            tail = nil
-            
-        } else if data == head?.value {
-            head?.next?.prev = nil
-            head = head?.next
-            
-        } else if data == tail?.value {
-            target = tail
-            tail?.prev?.next = nil
-            tail = tail?.prev
-            
-        } else {
-            while target != nil {
-                if data == target?.value {
-                    target?.prev?.next = target?.next
-                    target?.next?.prev = target?.prev
-                    
-                    break
-                }
-                
-                target = target?.next
-            }
-        }
-        return target
+        return node
     }
     
 }
 
 func solution(_ row: Int, _ select: Int, _ operations: [String]) -> String {
     let tables: DoublyLinkedList<Int> = initTables(row)
-    var removeStack: [Int] = []
+    var removeStack: [DoublyNode<Int>?] = []
     var selectIndex: DoublyNode<Int>? = tables.peek(select)
     var answer: [Character] = Array(repeating: "O", count: row)
     
@@ -190,18 +104,20 @@ func solution(_ row: Int, _ select: Int, _ operations: [String]) -> String {
         case "D":
             selectIndex = move(index: selectIndex, Int(ops.last!)!, tables)
         case "C":
-            guard let targetIndex = selectIndex else {
-                continue
+            if let removeIndex = selectIndex {
+                selectIndex = (selectIndex === tables.tail) ? selectIndex?.prev : selectIndex?.next
+                removeStack.append(removeIndex)
+                tables.remove(removeIndex)
+                
+                answer[removeIndex.value] = "X"
             }
-            selectIndex = (targetIndex === tables.tail) ? targetIndex.prev : targetIndex.next
-            removeStack.append(targetIndex.value)
-            tables.remove(targetIndex.value)
-            answer[targetIndex.value] = "X"
             
         case "Z":
-            let undoIndex = removeStack.removeLast()
-            tables.insert(undoIndex)
-            answer[undoIndex] = "O"
+            if let undoIndex = removeStack.removeLast() {
+                tables.restore(undoIndex)
+                answer[undoIndex.value] = "O"
+            }
+            
         default:
             break
         }
@@ -230,7 +146,7 @@ func initTables(_ count: Int) -> DoublyLinkedList<Int> {
     let linkedList = DoublyLinkedList<Int>()
     
     for value in 0..<count {
-        linkedList.insert(value)
+        linkedList.append(value)
     }
     
     return linkedList
