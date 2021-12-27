@@ -34,19 +34,6 @@ class DoublyLinkedList<T: Comparable> {
     private(set) var head: DoublyNode<T>?
     private(set) var tail: DoublyNode<T>?
     
-    var values: [T] {
-        var values: [T] = []
-        var node = head
-        
-        while node != nil {
-            if let node = node {
-                values.append(node.value)
-            }
-            node = node?.next
-        }
-        return values
-    }
-    
     func append(_ data: T) {
         let node = DoublyNode(data)
         
@@ -74,6 +61,11 @@ class DoublyLinkedList<T: Comparable> {
     }
     
     func restore(_ node: DoublyNode<T>?) {
+        if node?.next === head {
+            head = node
+        } else if node?.prev === tail {
+            tail = node
+        }
         node?.prev?.next = node
         node?.next?.prev = node
     }
@@ -87,12 +79,28 @@ class DoublyLinkedList<T: Comparable> {
         return node
     }
     
+    func node(_ node: DoublyNode<T>?, offset: Int) -> DoublyNode<T>? {
+        var curNode = node
+        
+        if offset < 0 {
+            for _ in 0..<abs(offset) {
+                curNode = curNode?.prev
+            }
+        } else {
+            for _ in 0..<offset {
+                curNode = curNode?.next
+            }
+        }
+        
+        return curNode
+    }
+    
 }
 
-func solution(_ row: Int, _ select: Int, _ operations: [String]) -> String {
+func editTable(_ row: Int, _ select: Int, _ operations: [String]) -> String {
     let tables: DoublyLinkedList<Int> = initTables(row)
-    var removeStack: [DoublyNode<Int>?] = []
-    var selectIndex: DoublyNode<Int>? = tables.peek(select)
+    var removeStack: [DoublyNode<Int>] = []
+    var selectNode: DoublyNode<Int>? = tables.peek(select)
     var answer: [Character] = Array(repeating: "O", count: row)
     
     for operation in operations {
@@ -100,23 +108,23 @@ func solution(_ row: Int, _ select: Int, _ operations: [String]) -> String {
         
         switch ops.first! {
         case "U":
-            selectIndex = move(index: selectIndex, -Int(ops.last!)!, tables)
+            selectNode = tables.node(selectNode, offset: -Int(ops.last!)!)
         case "D":
-            selectIndex = move(index: selectIndex, Int(ops.last!)!, tables)
+            selectNode = tables.node(selectNode, offset: Int(ops.last!)!)
         case "C":
-            if let removeIndex = selectIndex {
-                selectIndex = (selectIndex === tables.tail) ? selectIndex?.prev : selectIndex?.next
-                removeStack.append(removeIndex)
-                tables.remove(removeIndex)
+            if let removeNode = selectNode {
+                selectNode = (selectNode === tables.tail) ? selectNode?.prev : selectNode?.next
+                removeStack.append(removeNode)
+                tables.remove(removeNode)
                 
-                answer[removeIndex.value] = "X"
+                answer[removeNode.value] = "X"
             }
             
         case "Z":
-            if let undoIndex = removeStack.removeLast() {
-                tables.restore(undoIndex)
-                answer[undoIndex.value] = "O"
-            }
+            let undoNode = removeStack.removeLast()
+            
+            tables.restore(undoNode)
+            answer[undoNode.value] = "O"
             
         default:
             break
@@ -124,22 +132,6 @@ func solution(_ row: Int, _ select: Int, _ operations: [String]) -> String {
     }
     
     return String(answer)
-}
-
-func move(index select: DoublyNode<Int>?, _ count: Int, _ tables: DoublyLinkedList<Int>) -> DoublyNode<Int>? {
-    var curIndex = select
-    
-    if count < 0 {
-        for _ in 0..<abs(count) {
-            curIndex = curIndex?.prev
-        }
-    } else {
-        for _ in 0..<count {
-            curIndex = curIndex?.next
-        }
-    }
-    
-    return curIndex
 }
 
 func initTables(_ count: Int) -> DoublyLinkedList<Int> {
