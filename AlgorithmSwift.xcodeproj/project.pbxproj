@@ -38,6 +38,7 @@
 		377622AB2594696200DFD278 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377622AA2594696200DFD278 /* Network.swift */; };
 		377622B025946DB200DFD278 /* 14888.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377622AF25946DB200DFD278 /* 14888.swift */; };
 		3791BB0A27720432004670FD /* FlippingBits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3791BB0927720432004670FD /* FlippingBits.swift */; };
+		37975220278ED4C500B58B4D /* PressKeypad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3797521F278ED4C500B58B4D /* PressKeypad.swift */; };
 		37A219EA2758D53D00072616 /* MaxArrayNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A219E92758D53D00072616 /* MaxArrayNum.swift */; };
 		37A2F79D274F859E004406F3 /* Permutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A2F79C274F859E004406F3 /* Permutation.swift */; };
 		37A2F79F274FAAD9004406F3 /* Combination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A2F79E274FAAD9004406F3 /* Combination.swift */; };
@@ -96,6 +97,7 @@
 		377622AA2594696200DFD278 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		377622AF25946DB200DFD278 /* 14888.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 14888.swift; sourceTree = "<group>"; };
 		3791BB0927720432004670FD /* FlippingBits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlippingBits.swift; sourceTree = "<group>"; };
+		3797521F278ED4C500B58B4D /* PressKeypad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressKeypad.swift; sourceTree = "<group>"; };
 		37A219E92758D53D00072616 /* MaxArrayNum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxArrayNum.swift; sourceTree = "<group>"; };
 		37A2F79C274F859E004406F3 /* Permutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permutation.swift; sourceTree = "<group>"; };
 		37A2F79E274FAAD9004406F3 /* Combination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combination.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 		376B654D27731C580058FC7D /* Kakao */ = {
 			isa = PBXGroup;
 			children = (
+				3797521E278ED4B600B58B4D /* KakaoInternship2020 */,
 				376B654E27731C6C0058FC7D /* KakaoInternship2021 */,
 			);
 			path = Kakao;
@@ -259,6 +262,14 @@
 				3791BB0927720432004670FD /* FlippingBits.swift */,
 			);
 			path = Miscellaneous;
+			sourceTree = "<group>";
+		};
+		3797521E278ED4B600B58B4D /* KakaoInternship2020 */ = {
+			isa = PBXGroup;
+			children = (
+				3797521F278ED4C500B58B4D /* PressKeypad.swift */,
+			);
+			path = KakaoInternship2020;
 			sourceTree = "<group>";
 		};
 		37A219E82758D52300072616 /* DynamicProgramming */ = {
@@ -444,6 +455,7 @@
 				377622B025946DB200DFD278 /* 14888.swift in Sources */,
 				377622A725945C4300DFD278 /* TargetNumber.swift in Sources */,
 				3709510D2760939E004B96E8 /* MakingAnagrams.swift in Sources */,
+				37975220278ED4C500B58B4D /* PressKeypad.swift in Sources */,
 				37EA5039276A084C000A9E6D /* 2DArray-DS.swift.swift in Sources */,
 				37128054274A4D4400BBACC4 /* JumpingOnTheCloud.swift in Sources */,
 				37A2F79F274FAAD9004406F3 /* Combination.swift in Sources */,
