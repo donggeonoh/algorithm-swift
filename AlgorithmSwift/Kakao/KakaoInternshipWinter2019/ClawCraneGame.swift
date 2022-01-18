@@ -7,6 +7,12 @@
 
 import Foundation
 
+/// 2019 카카오 겨울 인턴십 크레인 인형뽑기 게임 솔루션
+///
+/// - Date: 2022/01/19
+/// - Author: Oh Donggeon
+/// - Link: https://programmers.co.kr/learn/courses/30/lessons/64061
+///
 func solution(_ board: [[Int]], _ moves: [Int]) -> Int {
     typealias Position = (row: Int, col: Int)
     var board = board
