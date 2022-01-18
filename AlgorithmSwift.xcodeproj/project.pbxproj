@@ -37,6 +37,7 @@
 		377622A725945C4300DFD278 /* TargetNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377622A625945C4300DFD278 /* TargetNumber.swift */; };
 		377622AB2594696200DFD278 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377622AA2594696200DFD278 /* Network.swift */; };
 		377622B025946DB200DFD278 /* 14888.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377622AF25946DB200DFD278 /* 14888.swift */; };
+		377FCB8C279713C3001B4088 /* ClawCraneGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377FCB8B279713C3001B4088 /* ClawCraneGame.swift */; };
 		3791BB0A27720432004670FD /* FlippingBits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3791BB0927720432004670FD /* FlippingBits.swift */; };
 		37975220278ED4C500B58B4D /* PressKeypad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3797521F278ED4C500B58B4D /* PressKeypad.swift */; };
 		37A219EA2758D53D00072616 /* MaxArrayNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A219E92758D53D00072616 /* MaxArrayNum.swift */; };
@@ -96,6 +97,7 @@
 		377622A625945C4300DFD278 /* TargetNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetNumber.swift; sourceTree = "<group>"; };
 		377622AA2594696200DFD278 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		377622AF25946DB200DFD278 /* 14888.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 14888.swift; sourceTree = "<group>"; };
+		377FCB8B279713C3001B4088 /* ClawCraneGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClawCraneGame.swift; sourceTree = "<group>"; };
 		3791BB0927720432004670FD /* FlippingBits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlippingBits.swift; sourceTree = "<group>"; };
 		3797521F278ED4C500B58B4D /* PressKeypad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressKeypad.swift; sourceTree = "<group>"; };
 		37A219E92758D53D00072616 /* MaxArrayNum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxArrayNum.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 		376B654D27731C580058FC7D /* Kakao */ = {
 			isa = PBXGroup;
 			children = (
+				377FCB8A27971363001B4088 /* KakaoInternshipWinter2019 */,
 				3797521E278ED4B600B58B4D /* KakaoInternship2020 */,
 				376B654E27731C6C0058FC7D /* KakaoInternship2021 */,
 			);
@@ -254,6 +257,14 @@
 				377622AF25946DB200DFD278 /* 14888.swift */,
 			);
 			path = Baekjoon;
+			sourceTree = "<group>";
+		};
+		377FCB8A27971363001B4088 /* KakaoInternshipWinter2019 */ = {
+			isa = PBXGroup;
+			children = (
+				377FCB8B279713C3001B4088 /* ClawCraneGame.swift */,
+			);
+			path = KakaoInternshipWinter2019;
 			sourceTree = "<group>";
 		};
 		3791BB0827720419004670FD /* Miscellaneous */ = {
@@ -433,6 +444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37BAA0E62756011C00F3BBF9 /* Fibonacci.swift in Sources */,
+				377FCB8C279713C3001B4088 /* ClawCraneGame.swift in Sources */,
 				37A219EA2758D53D00072616 /* MaxArrayNum.swift in Sources */,
 				3712805C274A782800BBACC4 /* MinimumSwaps2.swift in Sources */,
 				37EA50372769FBFA000A9E6D /* MarkAndToys.swift in Sources */,
